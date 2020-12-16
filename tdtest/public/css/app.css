@@ -1,0 +1,15 @@
+.main {
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: ivory;
+    position: fixed;
+    top: calc(40% - 100px);
+    left: calc(50% - 200px);
+    text-align: center;
+    padding-top: 25px;
+}
+#btn-ok{
+    display: block;
+    margin: 15px auto;
+}
