@@ -50,7 +50,7 @@
             _token:_token
         };
         $.post(url, query, function(data) {
-            if(parseInt(data[0]))
+            if(parseInt(data[0]) || data[0]==='-' || data[0]==='0')
                 $('#popup-answer').html('F('+x+') = ' + data);
             else
                 $('#popup-answer').html(data);

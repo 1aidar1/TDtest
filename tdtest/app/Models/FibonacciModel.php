@@ -9,6 +9,10 @@ class FibonacciModel extends Model
 {
     use HasFactory;
 
+
+    private $input;
+    private $output;
+
     /** Formula function
      * @param $n
      * @return int
@@ -44,5 +48,25 @@ class FibonacciModel extends Model
             return self::fib($n)*-1;
         }
         return self::fib($n);
+    }
+
+
+    public function getOutput()
+    {
+        return $this->attributes['output'];
+    }
+    public function setOutput($output): void
+    {
+        $this->attributes['output'] = $output;
+    }
+
+    public function getInput()
+    {
+        return $this->attributes['input'];
+    }
+
+    public function setInput($input): void
+    {
+        $this->attributes['input'] = $input;
     }
 }
