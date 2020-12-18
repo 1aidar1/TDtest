@@ -29,9 +29,9 @@ class FibonacciController extends Controller
 
         $f_model = new FibonacciModel();
         $x = $e->input('input');
-        $f_model->input = $x;
+        $f_model->setInput($x);
         $ans= FibonacciModel::fibonacci($x);
-        $f_model->output = $ans;
+        $f_model->setOutput($ans);
         $f_model->save();
 
 
